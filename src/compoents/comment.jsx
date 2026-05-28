@@ -27,7 +27,7 @@ export function Comment({ postId, setComments  }) {
         try{
             
             const res = await axios.post(
-                "http://localhost:5000/api/auth/action/postComment",
+                "https://zoom-node-crhn.onrender.com/api/auth/action/postComment",
                 { comment, postId },
                 {
                     headers : { "Authorization" : `Bearer ${token}` }

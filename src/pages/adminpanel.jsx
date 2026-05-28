@@ -29,7 +29,7 @@ export function AdminPanel() {
         const token = localStorage.getItem("token");
         const getAllUsers = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/auth/action/getallusers", {
+                const res = await axios.get("https://zoom-node-crhn.onrender.com/api/auth/action/getallusers", {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -44,7 +44,7 @@ export function AdminPanel() {
 
         const getAllPosts = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/auth/action/getallpost", {
+                const res = await axios.get("https://zoom-node-crhn.onrender.com/api/auth/action/getallpost", {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

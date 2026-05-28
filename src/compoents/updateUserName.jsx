@@ -11,7 +11,7 @@ export async function updateUserName(newUserName){
     const token = localStorage.getItem("token");
 
     try{
-       await axios.put("http://localhost:5000/api/auth/action/updateusername", { username: newUserName }, {
+       await axios.put("https://zoom-node-crhn.onrender.com/api/auth/action/updateusername", { username: newUserName }, {
         headers: {
             "Authorization": `Bearer ${token}`
         }
@@ -27,7 +27,7 @@ export async function updateEmail(newEmail){
     const token = localStorage.getItem("token");
 
     try{
-       await axios.put("http://localhost:5000/api/auth/action/updateemail", { email: newEmail }, {
+       await axios.put("https://zoom-node-crhn.onrender.com/api/auth/action/updateemail", { email: newEmail }, {
         headers: {
             "Authorization": `Bearer ${token}`
         }
@@ -44,7 +44,7 @@ export async function updatePassword(newPassword){
     let token = localStorage.getItem("token");
     
     try{
-       await axios.put("http://localhost:5000/api/auth/action/updatepassword", { password: newPassword }, {
+       await axios.put("https://zoom-node-crhn.onrender.com/api/auth/action/updatepassword", { password: newPassword }, {
         headers: {
             "Authorization": `Bearer ${token}`
         }
@@ -62,7 +62,7 @@ export async function deleteAccount(AccountId, role, setUsers){
     console.log(role);
     
     try{
-        const res = await axios.delete(`http://localhost:5000/api/auth/action/deleteAccount/${AccountId}`, {
+        const res = await axios.delete(`https://zoom-node-crhn.onrender.com/api/auth/action/deleteAccount/${AccountId}`, {
             headers: { "Authorization": `Bearer ${token}` },   
         });
         if(res.data.status === "success"){

@@ -44,7 +44,7 @@ export function CreatePost(){
 
          
       try{
-         const res = await axios.post("http://localhost:5000/api/auth/action/addpost", 
+         const res = await axios.post("https://zoom-node-crhn.onrender.com/api/auth/action/addpost", 
             formData,
             {
             headers: {

@@ -15,7 +15,7 @@ export function AdminRoute({ children }) {
         }
         const gotUserInfo = async () => {
             try{
-                const res = await axios.get("http://localhost:5000/api/auth/action/getsingleUser", {
+                const res = await axios.get("https://zoom-node-crhn.onrender.com/api/auth/action/getsingleUser", {
                     headers: { "Authorization": `Bearer ${token}` },
                     withCredentials: true
                 });                
