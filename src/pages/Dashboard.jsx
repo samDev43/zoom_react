@@ -31,7 +31,7 @@ export function Dashbord() {
       
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/auth/action/getuserposts",
+          "https://zoom-node-crhn.onrender.com/api/auth/action/getuserposts",
           {
             headers: {
               "Authorization": `Bearer ${token}`,
@@ -65,7 +65,7 @@ export function Dashbord() {
   return (
     <>
       <PublicNav auth={auth} user={user} />
-      <div className="pb-[80px]  overflow-y-hidden h-full  bg-gradient-to-b from-[#0B1215] to-[#111C22]">
+      <div className="pb-[80px]  overflow-y-hidden h-screen      bg-gradient-to-b from-[#0B1215] to-[#111C22]">
         <div className="pt-[200px] flex md:flex-row flex-col items-start justify-start md:justify-between md:items-center lg:w-[60%] md:w-[80%] w-[90%] mx-auto">
           <div className=" flex flex-col gap-2">
             <h1 className="flex items-center gap-2"><p className="text-white font-bold text-4xl">HI,</p> <p className="text-white font-bold text-4xl">{userName} 👋</p>  </h1>

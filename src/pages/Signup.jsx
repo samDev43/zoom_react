@@ -49,7 +49,7 @@ console.log(errors);
 
       try {
         let res = await axios.post(
-          "http://localhost:5000/api/auth/signup",
+          "https://zoom-node-crhn.onrender.com/api/auth/signup",
           data,
           {
             headers: {

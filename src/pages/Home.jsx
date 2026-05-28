@@ -19,7 +19,7 @@ export function Home(){
                 const  getUserInfo = async () => {
                     try{
                          let res =  await axios.get(
-                        "http://localhost:5000/api/auth/action/getuser",
+                        "https://zoom-node-crhn.onrender.com/api/auth/action/getuser",
                         {
                             headers: { "Authorization": `Bearer ${token}`},
                             withCredentials: true

@@ -35,7 +35,7 @@ export function SinglePost() {
   useEffect(() => {
     const getSinglePost = async () => {
       const res = await axios.get(
-        `http://localhost:5000/api/auth/action/getpost/${id}`,
+        `https://zoom-node-crhn.onrender.com/api/auth/action/getpost/${id}`,
       )
       setPost(res.data.post)
       setComments(res.data.comment)

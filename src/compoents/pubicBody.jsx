@@ -14,14 +14,14 @@ export function PublicBody() {
   // const [ display, setDisplay ] = useState([])
   const [ searchTerm, setSearchTerm ] = useState('');
   // const [ userName, setUserName ] = useState('');
-      // let imageUrl = "http://localhost:5000/"
+      // let imageUrl = "https://zoom-node-crhn.onrender.com/"
   // const token = localStorage.getItem('token')
   
   
   useEffect(() =>{
     const getAllPost = async () => {
       const res = await axios.get(
-        "http://localhost:5000/api/auth/action/getallpost"
+        "https://zoom-node-crhn.onrender.com/api/auth/action/getallpost"
       );            
         setAllPost(res.data.posts)
   }
